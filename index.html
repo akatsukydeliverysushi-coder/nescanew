@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b1220">
+<link rel="manifest" href="./manifest.json">
+<link rel="stylesheet" href="./style.css">
+<title>Nesca Scan</title>
+</head>
+<body>
+<main class="app">
+<header><div><h1>Nesca Scan</h1><p>Scanner de rede</p></div><button id="installBtn" hidden>Instalar app</button></header>
+<section class="card">
+<label>Endereço ou faixa de rede</label>
+<div class="row"><input id="target" placeholder="Ex.: 192.168.0.1 ou 192.168.0.0/24"><button id="scanBtn">Iniciar</button></div>
+<p class="hint">A versão PWA inicia com interface segura. Varreduras reais dependem de um serviço local/backend autorizado.</p>
+</section>
+<section class="card"><div class="status"><span id="dot"></span><strong id="status">Pronto</strong></div><pre id="log">Aguardando início...</pre></section>
+</main>
+<script src="./app.js"></script>
+</body></html>
